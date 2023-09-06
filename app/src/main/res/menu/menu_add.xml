@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_search"
+        android:title="검색"/>
+<!--<item android:id="@+id/korean"-->
+<!--    android:title="한식"/>-->
+<!--    <item android:id="@+id/chinese"-->
+<!--        android:title="중식"/>-->
+<!--    <item android:id="@+id/west"-->
+<!--        android:title="양식"/>-->
+<!--    <item android:id="@+id/japanese"-->
+<!--        android:title="일식"/>-->
+<!--    <item android:id="@+id/asian"-->
+<!--        android:title="아시안"/>-->
+<!--    <item android:id="@+id/bunsik"-->
+<!--        android:title="분식"/>-->
+<!--    <item android:id="@+id/fastfood"-->
+<!--        android:title="패스트푸트"/>-->
+<!--    <item android:id="@+id/cafe"-->
+<!--        android:title="디저트/카페"/>-->
+<!--    <item android:id="@+id/etc"-->
+<!--        android:title="기타"/>-->
+</menu>

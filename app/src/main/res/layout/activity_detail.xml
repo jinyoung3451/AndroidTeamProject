@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:scrollbars="vertical"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/restaurant_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:fontFamily="@font/ro"
+                android:hint="Restaurant Name"
+                android:textColor="#1C548F"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="작성자 : "
+                android:fontFamily="@font/ro"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:id="@+id/writer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ro"
+                android:hint="작성자"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginRight="5dp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/store_img"
+                android:layout_width="240dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+
+
+
+
+                <FrameLayout
+                    android:layout_width="60dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp">
+
+
+
+
+
+
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/fb_like"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:translationY="70dp"
+                        android:backgroundTint="#82D9E4"
+                        android:src="@drawable/like"
+                        app:fabSize="normal">
+
+
+
+
+                    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
+
+
+
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/fb_unlike"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/unlike"
+                        android:translationY="70dp"
+                        android:backgroundTint="#82D9E4"
+                        app:fabSize="normal">
+
+
+
+
+
+                    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
+
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/box_background_blue">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lini1"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginStart="18dp"
+                    android:text="평 점 : "
+                    android:fontFamily="@font/ro"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/ratingAddScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:hint="평점"
+                    android:fontFamily="@font/ro"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/lini2"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/lini1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="주 소 : "
+                    android:fontFamily="@font/ro"
+                    android:textSize="18sp"
+                    android:layout_marginStart="18dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="주소"
+                    android:fontFamily="@font/ro"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lini3"
+                android:layout_below="@id/lini2"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:text="영업시간 : "
+                    android:fontFamily="@font/ro"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="영업시간(브레이크타임)"
+                    android:fontFamily="@font/ro"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/lini3">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="카테고리 : "
+                    android:fontFamily="@font/ro"/>
+                <TextView
+                    android:id="@+id/category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:hint="카테고리"
+                    android:fontFamily="@font/ro"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ro"
+                android:text="리뷰"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/add_review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="리뷰없음"
+                android:fontFamily="@font/ro"
+                android:textSize="15sp"
+                android:layout_marginTop="25sp"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="댓글 작성"
+                android:fontFamily="@font/ro"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:hint="댓글을 입력해주세요"
+                android:fontFamily="@font/ro"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/comment_save"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignRight="@+id/comment"
+                android:text="등록"
+                android:fontFamily="@font/ro"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/commentRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="280dp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1046284165198",
+    "project_id": "foodrank-b90f0",
+    "storage_bucket": "foodrank-b90f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1046284165198:android:e50eace068ee6fbd2f631f",
+        "android_client_info": {
+          "package_name": "com.ecw.foodrankpr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1046284165198-ebb1e38ht67r7n9027kqis5dtvfat8j2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ecw.foodrankpr",
+            "certificate_hash": "93d5bee36318985de411cee552da659978043e2b"
+          }
+        },
+        {
+          "client_id": "1046284165198-v6uo2jriuukhf0uptle763ho8aq3nae7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsTw7Le1MPjk3kyZ30UZ2KzskrX1X8vJI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1046284165198-v6uo2jriuukhf0uptle763ho8aq3nae7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FoodRankPr</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_google_maps">GoogleMapsActivity</string>
+    <string name="title_activity_google_map">GoogleMapActivity</string>
+    <string name="RatingBar">RatingBar</string>
+    <string name="fb_like">fb_like</string>
+    <string name="fb_unlike">fb_unlike</string>
+    <string name="TabLayout">TabLayout</string>
+    <string name="imageBtn">imageBtn</string>
+    <string name="likeBack">likeBack</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="나의 정보"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:id="@+id/move_myinfo"/>
+    <item
+        android:title="리뷰 등록"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:id="@+id/move_addreview"/>
+    <item
+        android:title="현재위치 확인 "
+        android:icon="@android:drawable/ic_menu_mylocation"
+        android:id="@+id/move_holdserch"/>
+    <item
+        android:title="로그아웃"
+        android:icon="@android:drawable/ic_menu_revert"
+        android:id="@+id/move_logout"/>
+</menu>

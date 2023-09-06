@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="279dp"
+            android:layout_height="101dp"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="EATNIC"
+            android:textColor="#126083"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/busan" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="374dp"
+        android:layout_height="240dp"
+        android:background="@drawable/box_background_blue"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:translationX="20dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="315dp"
+            android:layout_height="211dp"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center"
+            android:lineSpacingExtra="12dp"
+            android:text="'EATNIC'는 \n부산을 대표하는 맛집을 지역별, 평점별로 소개하는 어플입니다. \n 'EATNIC'에 가입하시면 \n맛집 리뷰를 작성하고, 회원들과 맛집 정보를 공유할 수 있습니다."
+            android:textAlignment="center"
+            android:textSize="25dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="43dp"
+            tools:layout_editor_absoluteY="377dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

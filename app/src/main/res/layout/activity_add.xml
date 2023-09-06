@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".store.StoreAddActivity">
+
+
+    <EditText
+        android:id="@+id/storeName"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:hint="'맛집 이름' 을 입력해주세요."
+        android:inputType="text" />
+
+    <TextView
+        style="@style/Add_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="카테고리(분류)" />
+
+    <EditText
+        android:id="@+id/storeCategoryEditText"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:hint="ex) 한식, 아시안, 디저트/카페"
+        android:inputType="text"/>
+
+    <TextView
+        style="@style/Add_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="영업 시간"
+        />
+
+    <EditText
+        android:id="@+id/storeTime"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:hint="영업시간을 입력해주세요."
+        android:inputType="time" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/Add_Text"
+            android:id="@+id/map_search_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주소" />
+
+        <Button
+            android:id="@+id/map_search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="43dp"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:text="주소 검색" />
+        <EditText
+            android:id="@+id/map_et"
+            android:layout_width="283dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="5dp"
+            android:hint=" '검색' 을 눌러주세요."
+            android:inputType="text"
+            android:layout_below="@+id/map_search_tv"
+            android:background="@drawable/box_background"
+            android:textSize="17sp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/Add_Text"
+            android:id="@+id/ratingBar_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="평점" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/Widget.AppCompat.RatingBar.Indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ratingBar_tv"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/RatingBar"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:stepSize="0.5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ratingBar"
+            android:layout_centerInParent="true"
+            android:text="선택하세요."
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/ratingBarScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ratingBar"
+            android:layout_toRightOf="@+id/ratingBar"
+            android:text="점수"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/reviewtext"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:hint="어떤 점이 좋았나요?"
+        android:inputType="text"
+        android:maxLines="2"/>
+
+    <Button
+        android:id="@+id/photo_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="사진 추가" />
+    <TextView
+        android:id="@+id/imageText1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/box_background"
+        android:textSize="14sp"/>
+
+    <!-- isEmpty = TextView 내용 x / EditText hint o   -->
+    <!--        android:text=" 이미지를 추가해주세요. "-->
+
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:text="저장" />
+</LinearLayout>
